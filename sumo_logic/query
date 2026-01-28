@@ -1,0 +1,7 @@
+_sourcecategory="prod/webapp"
+| json auto
+| where path = "/api/data"
+| where response_time_ms > 3000
+| timeslice 10m
+| count by _timeslice, instance_id
+| where _count > 5

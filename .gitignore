@@ -1,0 +1,10 @@
+
+
+*.tfvars
+*.tfstate
+*.tfstate.backup
+*.terraform
+*.zip
+
+sumo-demo-key
+sumo-demo-key.pub
